@@ -5,6 +5,8 @@ public class BouncyScript : MonoBehaviour {
 
     private AudioSource a;
 
+    public float bounciness = 10.0f;
+
 	// Use this for initialization
 	void Start () {
         a = GetComponent<AudioSource>();
@@ -15,12 +17,12 @@ public class BouncyScript : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerStay(Collider collider)
     {
         SnowmanAIController saic = collider.GetComponent<SnowmanAIController>();
         if (saic != null)
         {
-            saic.bounceUp(10.0f);
+            saic.bounceUp(bounciness);
             a.Play();
         }
     }
