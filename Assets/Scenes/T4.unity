@@ -162,7 +162,7 @@ NavMeshSettings:
     minRegionArea: 0.1
     cellSize: 0.38
     manualCellSize: 1
-  m_NavMeshData: {fileID: 23800000, guid: 34830d166059c9a4bbbedeecf373eb8f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 2d2cf8d695024ef4a81e8d60eaed95b5, type: 2}
 --- !u!1 &1408561
 GameObject:
   m_ObjectHideFlags: 0
@@ -14335,7 +14335,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 200
-  field of view: 30
+  field of view: 60
   orthographic: 0
   orthographic size: 4.5
   m_Depth: 0
